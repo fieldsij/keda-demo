@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: creator
-  namespace: default
+  namespace: flux-system
 spec:
   replicas: 2
   selector:
@@ -28,7 +28,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: worker
-  namespace: default
+  namespace: flux-system
 spec:
   replicas: 2
   selector:
